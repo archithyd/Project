@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Home</title>
+    </head>
+    <style>
+         body{
+         font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+         }
+        .backgroundimage{
+            background: url('/static/grayscale-photo-of-computer-laptop-near-white-notebook-and-169573.jpg');
+            background-size:cover;
+            background-position:center;
+            display:block;
+            height:110vh;
+            weight:10%;
+            flex-direction:column;
+            filter:blur(04px);
+        }
+         .content{
+            position:absolute;
+            z-index:1;
+         }
+
+    </style>
+    <body>
+
+    <div class="content">
+        <center><h1>Introduction</h1></center>
+        <hr width="50%">
+        <p>Humans can understand the contents of an image simply by looking. We perceive the text on the image as text and can read it.
+            Computers don't work the same way. They need something more concrete, organized in a way they can understand.
+            This is where Optical Character Recognition (OCR) is used. Whether it's recognition of car plates from a camera, or hand-written documents that should be converted into a digital copy, this technique is very useful. While it's not always perfect, it's very convenient and makes it a lot easier and faster for some people to do their jobs.
+            In this article, we will delve into the depth of Optical Character Recognition and its application areas. We will also build a simple script in Python that will help us detect characters from images and expose this through a Flask application for a more convenient interaction medium.</p>
+        <center><h2>Optical character recognition</h2></center>
+        <hr width="50%">
+        <p><b>Optical character recognition</b> or <b>optical character reader (OCR)</b> is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image (for example from a television broadcast).</p>
+        <p>Widely used as a form of data entry from printed paper data records, whether passport documents, invoices, bank statements, computerized receipts, business cards, mail, printouts of static-data, or any suitable documentation. It is a common method of digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech, key data and text mining. OCR is a field of research in pattern recognition, artificial intelligence and computer vision.</p>
+        <p>Early versions needed to be trained with images of each character, and worked on one font at a time. Advanced systems capable of producing a high degree of recognition accuracy for most fonts are now common, and with support for a variety of digital image file format inputs. Some systems are capable of reproducing formatted output that closely approximates the original page including images, columns, and other non-textual components.</p>
+    <center><h2>Applications</h2></center>
+        <hr width="50%">
+        <ul>
+            <li>Previously, digitization of documents was achieved by manually typing the text on the computer. Through OCR, this process is made easier as the document can be scanned, processed and the text extracted and stored in an editable form such as a word document.</li>
+            <li>If you have a document scanner on your phone, such as Adobe Scan, you have probably encountered OCR technology in use.</li>
+            <li>Airports can also use OCR to automate the process of passport recognition and extraction of information from them.</li>
+            <li>Other uses of OCR include automation of data entry processes, detection, and recognition of car number plates.</li>
+        </ul>
+        <div class="Working">
+        <center><h1><a href="upload">Working</a></h1></center></div>
+    </div>
+    <div class="backgroundimage"></div>
+    </body>
+</html>

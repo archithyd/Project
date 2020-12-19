@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload Image</title>
+    </head>
+    <style>
+        body{
+        font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+        }
+        .background{
+            height:150vh;
+            weight:100%;
+            background-size:cover;
+            background-position:center;
+            background: url('/static/grayscale-photo-of-computer-laptop-near-white-notebook-and-169573.jpg');
+            filter:blur(8px);
+        }
+
+         .content{
+            position:absolute ;
+            z-index:1;
+
+         }
+    </style>
+    <body>
+    <div class="content">
+        <h1>Process</h1>
+        <hr width="20%" align="left">
+        <ol>
+            <li>Pre-process image data, for example: convert to gray scale, smooth, de-skew, filter.</li>
+            <li>Detect lines, words and characters.</li>
+            <li>Produce ranked list of candidate characters based on trained data set. (here the setDataPath() method is used for setting path of trainer data).</li>
+            <li>Post process recognized characters, choose best characters based on confidence from previous step and language data. Language data includes dictionary, grammar rules, etc.</li>
+        </ol>
+        <center><img src="/static/General-working-of-OCR-3.jpg" alt="Working" width="700" height="400" border="3"></center>
+
+        {% if msg %}
+        <h1>{{ msg }}</h1>
+        {% endif %}
+
+        <h1>Upload new file that to converted to a text file</h1>
+
+        <form method=post enctype=multipart/form-data>
+            <p><input type=file name=file>
+            <input type=submit value=Upload>
+        </form>
+
+        <h1>Result:</h1>
+        {% if img_src %}
+            <img src="{{ img_src }}">
+        {% endif %}
+
+        {% if extracted_text %}
+            <p> The extracted text from the image above is: <b> {{ extracted_text }} </b></p>
+
+        {% else %}
+            The extracted text will be displayed here
+        {% endif %}
+         <a href ='/static/file.txt' download>Converted_file</a>           </div>
+    <div class="background"></div>
+    </body>
+</html>
