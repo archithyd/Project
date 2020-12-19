@@ -1,0 +1,18 @@
+What is TensorFlow: TensorFlow is an end-to-end open-source platform
+for machine learning. It has a comprehensive, flexible ecosystem of tools,
+libraries and community resources that lets researchers push the state-of-
+the-art in ML and developers easily build and deploy ML-powered
+applications. Learn more about TensorFlow from here.
+
+We will be using Google Colab for this demo. Google Colab is a free cloud
+service which can be used to develop deep learning applications using
+popular libraries such as Keras, TensorFlow, PyTorch, and OpenCV. To know
+more about Google Colab, click here.
+
+Let�s jump straight to a sample problem we are going to solve using
+TensorFlow and Machine-Learning concepts.
+
+Let�s assume that we are given the marketing budget spent (in thousands of
+dollars) by a media-services provider in the last 8 months along with the
+number of new subscribers (also in thousands) for the same time in the
+table given below:
